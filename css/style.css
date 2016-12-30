@@ -1,0 +1,248 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 -ms-box-sizing: border-box;
+	  -o-box-sizing: border-box;
+	     box-sizing: border-box;
+	font-size: 10px;
+	font-family: "PingFang SC",Helvetica,"Helvetica Neue","微软雅黑",Tahoma,Arial,sans-serif;
+	/* font: 10px/1.5 "PingFang SC",Helvetica,"Helvetica Neue","微软雅黑",Tahoma,Arial,sans-serif; */
+}
+html,
+body{
+	height: 100%;
+}
+/* music */
+#music{
+	width: 15vw;
+	height: 15vw;
+	position: fixed;
+	top: 3%;
+	right: 4%;
+	border: 4px solid #ef1639;
+	border-radius: 50%;
+	overflow: hidden;
+	background: #fff;
+}
+#music > img:first-of-type{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	width: 80%;
+}
+#music > img:last-of-type{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	z-index: 1;
+}
+
+/* page */
+.page{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.page > .bg{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+/* page_1 */
+#pag_1{
+	display: none;
+}
+#pag_1 .bg{
+	background: url(../img/p1_bg.jpg) no-repeat center center;
+	background-size: 100%;
+	z-index: -2;
+}
+#pag_1 .lantern{
+	position: absolute;
+	top: -5%;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+	font-size: 4.4rem;
+	z-index: 1;
+	background: url(../img/p1_lantern.png) no-repeat center center;
+	background-size: 100%;
+	width: 45vw;
+	height: 71vh;
+	padding-top: 52%;
+}
+#pag_1 .lantern:after{
+	position: absolute;
+	z-index: -1;
+	content: "";
+	top: -5%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 30vw;
+	height: 30vw;
+	background: #ef1639;
+	opacity: .5;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 10vw 10vw #ef1639;
+	   -moz-box-shadow: 0 0 10vw 10vw #ef1639;
+	    -ms-box-shadow: 0 0 10vw 10vw #ef1639;
+	     -o-box-shadow: 0 0 10vw 10vw #ef1639;
+			box-shadow: 0 0 10vw 10vw #ef1639;
+}
+#pag_1 .imooc{
+	position: absolute;
+	bottom: 6%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	background: url(../img/p1_imooc.png) no-repeat center center;
+	background-size: 100%;
+	width: 30vw;
+	height: 30vh;
+}
+#pag_1 .words{
+	text-align: center;
+	font-size: 4rem;
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+}
+
+/* page_2 */
+#pag_2{
+	display: none;
+}
+#pag_2 .bg{
+	background: url(../img/p2_bg.jpg) no-repeat center center;
+	background-size: 100%;
+	z-index: -2;
+}
+#pag_2 .p2_circle{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url(../img/p2_circle_outer.png) no-repeat center center;
+	background-size: 100%;
+	width: 60%;
+	height: 60%;
+}
+#pag_2 .p2_circle:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url(../img/p2_circle_middle.png) no-repeat center center;
+	background-size: 100%;
+	width: 79%;
+	height: 79%;
+}
+#pag_2 .p2_circle:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url(../img/p2_circle_inner.png) no-repeat center center;
+	background-size: 100%;
+	width: 59%;
+	height: 59%;
+}
+#pag_2 .p2_2016{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url(../img/p2_2016.png) no-repeat center center;
+	background-size: 100%;
+	width: 28%;
+	height: 28%;
+}
+/* page_3 */
+#pag_3{
+	display: block;
+}
+#pag_3 .bg{
+	background: url(../img/p3_bg.jpg) no-repeat center center;
+	background-size: 100%;
+	z-index: -2;
+}
+#pag_3 .p3_blessing{
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url(../img/p3_blessing.png) no-repeat center center;
+	background-size: 100%;
+	width: 18%;
+	height: 18%;
+}
+#pag_3 .p3_first{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 2%;
+	margin: auto;
+	background: url(../img/p3_couplet_first.png) no-repeat center center;
+	background-size: 100%;
+	width: 30%;
+	height: 52%;
+}
+#pag_3 .p3_second{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 2%;
+	margin: auto;
+	background: url(../img/p3_couplet_second.png) no-repeat center center;
+	background-size: 100%;
+	width: 30%;
+	height: 52%;
+}
+#pag_3 .p3_logo{
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url(../img/p3_logo.png) no-repeat center center;
+	background-size: 100%;
+	width: 30%;
+	height: 8%;
+}
+#pag_3 .p3_title{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url(../img/p3_title.png) no-repeat center center;
+	background-size: 100%;
+	width: 43%;
+	height: 47%;
+}
